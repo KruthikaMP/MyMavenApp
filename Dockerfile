@@ -13,5 +13,5 @@ FROM openjdk:8u171-jre-alpine
 WORKDIR /adevguide
 
 COPY --from=maven target/Mymavenapp.jar ./Mymavenapp.jar
-
+EXPOSE 3000
 CMD ["java", "-jar", "./Mymavenapp.jar"]
